@@ -139,6 +139,7 @@ nav a {
     text-align: center;
     color: ff0054;
     text-decoration: none;
+    padding: 15px;
 }   
 footer p {
     font-size: 1.2em;
@@ -161,4 +162,10 @@ footer .social img {
 }
 main section img {
     box-sizing: border-box;
+}
+footer .social img {
+    padding-top: 15px;
+}
+nav, footer {
+    flex-direction: column;
 }
