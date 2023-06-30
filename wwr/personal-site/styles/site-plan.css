@@ -3,173 +3,121 @@ Any spaces in your font name should be replaced with a +.
 Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 
-:root {
-  /* change the values below to your colors from your palette */
-  --primary-color: #396E94   ;
-  --secondary-color: #E7C24F ;
-  --accent1-color: #A42212;
-  --accent2-color: white;
-
-  /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: Lato, Helvetica, sans-serif;
-
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
-}
-img {
   display: block;
-  margin: 0 auto;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-}
-h2 {
-  text-align: center;
-}
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
-}
-header {
-  padding: 1em;
-  text-align: center;
-  color: var(--headline-color-on-color);
-  background-color: var(--paragraph-background-color);
-}
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
-}
-
-p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
-  padding: 1em;
-}
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
-}
-.colors th {
-  background-color: #999;
-}
-.colors td{
-  width: 25%;
-  height: 3em;
-}
-
-.primary {
-  background-color: var(--primary-color);
-}
-.secondary {
-  background-color: var(--secondary-color);
-}
-.accent1 {
-  background-color: var(--accent1-color);
-}
-.accent2{
-  background-color: var(--accent2-color);
-}
-
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
 }
 
 nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
-}
-nav  {
-  list-style-type: none;
+  background-color: steelblue;
+  padding: 1rem;
   display: flex;
-
+  justify-content: space-evenly;
+  align-items: center;
 }
+
 nav a {
-  padding:1em;
-  min-width: 120px;
+  color: white;
+  display: block;
+  padding: 0.5rem;
   text-decoration: none;
-  padding: 10px;
-
-}
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
-}
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
-.sitemap {
-  display: grid;
-  justify-content: center;
-
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
+h1 {
+  color: steelblue;
 }
-.sitemap > div {
 
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: steelblue;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  border: 1px solid steelblue;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+}
+
+p {
+  padding: 0;
+}
+
+main {
+ grid-column: 2;
+ margin: 1rem;
+}
+
+main img {
+  width: 150px;
+  height: auto;
+  float: right;
+}
+
+aside {
+  margin: 1em;
+  width: 20rem;
+  border: 1px solid rgba(0,0,0,0.2); /* 1 */
+  padding: 1em;
+  background-color: #eee;
+  color: #333;
   text-align: center;
-
-}
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page2 {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
+  position: relative;
+  grid-column: 1;
+  grid-row: 1;
 }
 
-.top {
-  grid-area: top;
-  border-left: 1px solid;
+aside img {
+  width: 200px;
+  height: auto;
+}
+/*
+aside h2 {
+  position: absolute;
+  top: 25px;
+  left: 120px;
+
+}
+*/
+header {
+  max-width: 840px;
+  margin: 0 auto;
+}
+footer  {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 840px;
+  margin: 0 auto;
+  align-items: center;
 }
 
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
+/* Class Selectors */
+
+.box {
+  margin: 1rem;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
 }
 
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
+.grid {
+  max-width: 840px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
 }
