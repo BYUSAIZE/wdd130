@@ -32,6 +32,9 @@ nav a {
 
 h1 {
   color: steelblue;
+  grid-column: 2/3;
+  grid-row: 1/1;
+  z-index: 0;
 }
 
 h2 {
@@ -120,4 +123,8 @@ footer  {
   margin: 0 auto;
   display: grid;
   align-items: center;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
