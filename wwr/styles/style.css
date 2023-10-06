@@ -169,3 +169,7 @@ footer .social img {
 nav, footer {
     flex-direction: column;
 }
+.home_grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+}

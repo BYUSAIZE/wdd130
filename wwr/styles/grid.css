@@ -1,0 +1,28 @@
+section {
+  width: 50%;
+  border: 1px solid;
+  background-color: #d9c2a3;
+  color: black;
+}
+.block2, .block4{
+  margin: 0 auto; 
+}
+.block3 {
+  margin-left: auto;
+}
+
+p:nth-of-type(2) {
+  text-align: center;
+  background-color: #d9c2a3;
+  color: black;
+}
+p:nth-of-type(3) {
+  text-align: right;
+}
+.block4 p:nth-of-type(1) {
+  text-align: right;
+}
+.block4 p:nth-of-type(3) {
+  text-align: left;
+}
+
