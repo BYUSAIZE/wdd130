@@ -69,18 +69,22 @@ header {
 nav {
     display: flex;
     gap: 2rem;
+    background-color: steelblue;
+    padding: 10px;
 }
 
 nav a {
+    display: block;
+    color: white;
+    padding: 10px;
+
     font-family: var(--font-body);
     font-size: 0.875rem;
     font-weight: 500;
-    color: var(--ink-muted);
     text-decoration: none;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 2px;
     transition: color 0.2s ease;
 }
 
@@ -186,6 +190,11 @@ main img {
     width: 150px;
     height: auto;
     display: block;
+
+    border: 1px solid #ccc;
+    padding: 3px;
+    box-shadow: 0 0 12px gray;
+
     border-radius: var(--radius-md);
 }
 
@@ -422,3 +431,4 @@ footer p {
     nav {
         gap: 1.25rem;
     }
+}
