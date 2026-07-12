@@ -9,10 +9,8 @@
     --cream: #faf7f2;
     --card-bg: #ffffff;
     --border: #d6ccbb;
-
     --font-display: 'Playfair Display', Georgia, serif;
     --font-body: 'DM Sans', sans-serif;
-
     --radius-sm: 6px;
     --radius-md: 16px;
     --radius-lg: 32px;
@@ -72,20 +70,6 @@ header {
 nav {
     display: flex;
     gap: 2rem;
-    background-color: steelblue;
-    padding: 10px;
-}
-
-nav {
-    display: flex;
-    gap: 2rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 20px;
-    display: block;
 }
 
 nav a {
@@ -127,16 +111,6 @@ main {
     margin: 0 auto;
     width: 100%;
     padding: 4rem 2rem 2rem;
-}
-
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid #000;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    border-radius: 12px;
-    display: block;
 }
 
 /* ─── Hero Grid ─────────────────────────────────── */
@@ -350,12 +324,6 @@ footer p {
     color: #9c8f80;
 }
 
-footer {
-    margin-top: 20px;
-    border-top: 1px solid black;
-    text-align: center;
-}
-
 /* ─── Animations ────────────────────────────────── */
 @keyframes fadeUp {
     from {
@@ -406,22 +374,4 @@ footer {
     nav {
         gap: 1.25rem;
     }
-}
-
-aside {
-    width: 20rem;
-    margin: 1rem auto;
-    border: 1px solid #000;
-    padding: 1rem;
-    background: #eee;
-    color: #000;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-p {
-    padding: 0;
 }
