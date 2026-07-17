@@ -1,0 +1,218 @@
+/* ===========================
+   CSS VARIABLES
+=========================== */
+
+:root {
+    --primary-color: #0B6E4F;
+    --secondary-color: #4CAF50;
+    --accent1-color: #1B1B1B;
+    --accent2-color: #F4F4F4;
+
+    --heading-font: Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* ===========================
+   RESET
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background: #ffffff;
+}
+
+/* ===========================
+   PAGE WIDTH
+=========================== */
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header img {
+    width: 120px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* ===========================
+   PARAGRAPHS
+=========================== */
+
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+    line-height: 1.6;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Hero Title */
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+
+    background: rgba(0, 0, 0, .6);
+
+    color: white;
+
+    padding: 18px;
+
+    letter-spacing: 2px;
+}
+
+/* Hero Article */
+
+.hero article {
+
+    position: absolute;
+
+    bottom: 20px;
+
+    left: 20px;
+
+    right: 20px;
+
+    background: rgba(255, 255, 255, .85);
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+}
+
+/* Employee Image */
+
+.hero article img {
+
+    float: right;
+
+    width: 140px;
+
+    margin-left: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+
+}
+
+/* ===========================
+   HISTORY
+=========================== */
+
+section {
+
+    margin-top: 30px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+
+    margin-top: 40px;
+
+    padding: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-top: 2px solid #ddd;
+
+}
+
+/* ===========================
+   SOCIAL MEDIA
+=========================== */
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.1);
+}
