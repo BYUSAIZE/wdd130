@@ -147,6 +147,10 @@ article {
 
 }
 
+.hero article {
+    background-color: var(--accent2-color);
+}
+
 /* Employee Image */
 
 .hero article img {
