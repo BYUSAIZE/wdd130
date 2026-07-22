@@ -50,7 +50,7 @@ header {
 }
 
 .header-inner {
-    max-width: 1100px;
+    max-width: 840px;
     margin: 0 auto;
     height: 64px;
     display: flex;
@@ -58,17 +58,11 @@ header {
     justify-content: space-between;
 }
 
-.logo-mark {
-    font-family: var(--font-display);
-    font-size: 1.1rem;
-    font-weight: 900;
-    color: var(--accent);
-    letter-spacing: 0.05em;
-}
-
 nav {
     display: flex;
-    gap: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
     background-color: steelblue;
     padding: 10px;
 }
@@ -77,42 +71,30 @@ nav a {
     display: block;
     color: white;
     padding: 10px;
-
+    text-decoration: none;
     font-family: var(--font-body);
     font-size: 0.875rem;
     font-weight: 500;
-    text-decoration: none;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    position: relative;
-    transition: color 0.2s ease;
-}
-
-nav a::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--accent);
-    transition: width 0.25s ease;
-}
-
-nav a:hover {
-    color: var(--accent);
-}
-
-nav a:hover::after {
-    width: 100%;
 }
 
 /* ─────────────────────────────────────────────────   Main───────────────────────────────────────────────── */
 main {
-    width: 1100px;
-    max-width: 100%;
-    margin: 0 auto;
     padding: 4rem 2rem 2rem;
+}
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* W04 Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: start;
 }
 
 /* ─────────────────────────────────────────────────   Hero Grid───────────────────────────────────────────────── */
@@ -150,6 +132,8 @@ h1 {
     color: var(--ink);
     margin-bottom: 1.25rem;
     letter-spacing: -0.02em;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 10px;
 }
 
 /* ─────────────────────────────────────────────────   Paragraph — W02: padding set to 0───────────────────────────────────────────────── */
@@ -392,6 +376,17 @@ footer p {
 
 /* ─────────────────────────────────────────────────   Responsive───────────────────────────────────────────────── */
 @media (max-width: 820px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid main,
+    aside {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
     .hero-grid {
         grid-template-columns: 1fr;
         gap: 2.5rem;
@@ -412,23 +407,5 @@ footer p {
 
     .strip:last-child {
         border-bottom: none;
-    }
-
-    aside {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 0 1rem;
-    }
-
-    main {
-        padding: 2rem 1rem;
-    }
-
-    nav {
-        gap: 1.25rem;
     }
 }
