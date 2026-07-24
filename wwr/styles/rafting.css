@@ -1,12 +1,12 @@
 /* ===========================
    CSS VARIABLES
 =========================== */
-
 :root {
     --primary-color: #0B6E4F;
     --secondary-color: #4CAF50;
     --accent1-color: #1B1B1B;
     --accent2-color: #F4F4F4;
+    --white: #ffffff;
 
     --heading-font: Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -29,7 +29,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background: #ffffff;
+    background: var(--white);
 }
 
 /* ===========================
@@ -141,21 +141,13 @@ article {
 /* Hero Article */
 
 .hero article {
-
     position: absolute;
-
     bottom: 20px;
-
     left: 20px;
-
     right: 20px;
-
-    background: rgba(255, 255, 255, .85);
-
+    background-color: var(--accent2-color);
     border-radius: 8px;
-
     padding: 20px;
-
 }
 
 /* Employee Image */
